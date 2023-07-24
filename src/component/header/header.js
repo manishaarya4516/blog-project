@@ -5,7 +5,7 @@ export const Header = () => {
   return (
     <HeaderStyle>
       <div className="headertitle">
-        <h1 className="headertitleblog">BLOGS</h1>
+        <h1 className="headertitleblog">ARTICLES</h1>
       </div>
       <img
         src="https://www.esri.com/arcgis-blog/wp-content/uploads/2023/06/Blog-art-thumb.jpg"

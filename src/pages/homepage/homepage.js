@@ -1,11 +1,12 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { HomePageStyle } from "./homepagestyle";
 import { Header } from "../../component/header/header";
-import { Posts } from "../posts/posts";
 import { Sidebar } from "../../component/sidebar/sidebar";
+import { Posts } from "../posts/posts";
 
 export const HomePage = () => {
+
   return (
     <HomePageStyle>
       <Header />

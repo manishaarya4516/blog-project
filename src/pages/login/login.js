@@ -19,15 +19,16 @@ export const Login = () => {
     e.preventDefault();
 
     axios
-      .post("http://localhost:5002/api/user/login", formData,{
+      .post("http://localhost:5002/auth/login", formData,{
         headers: { "Content-Type": "application/json" },
       })
       .then((res) => {
-        if (res.data ===  res.user) {
-          console.log("logged");
+        console.log(res);
+        console.log(res.data);
+       
           alert("login success");
           navigate("/home");
-        } else if (res.data === "not exist") {
+         if (res.data === "not exist") {
           alert("not valid");
           navigate("/");
         }

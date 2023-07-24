@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 export const Register = () => {
-  const [userName, setUserName] = useState("");
+  const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
@@ -14,11 +14,11 @@ export const Register = () => {
 
   const handleSubmit = (e) => {
     const formData = new FormData();
-    formData.append("userName", userName);
+    formData.append("username", username);
     formData.append("email", email);
     formData.append("password", password);
     e.preventDefault();
-    axios.post("http://localhost:5002/api/user/register", formData, {
+    axios.post("http://localhost:5002/auth/register", formData, {
       headers: { "Content-Type": "application/json" },
     });
     try {
@@ -38,7 +38,7 @@ export const Register = () => {
           className="registerInput"
           type="text"
           placeholder="Enter your username..."
-          onChange={(e) => setUserName(e.target.value)}
+          onChange={(e) => setUsername(e.target.value)}
         />
         <label>Email</label>
         <input
