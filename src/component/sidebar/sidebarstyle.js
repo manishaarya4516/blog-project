@@ -19,7 +19,7 @@ export const SidebarStyle = styled.div`
     padding: 10px;
     align-items: center;
     border-top: 1px solid brown;
-    border-bottom: 1px solid brown;
+    /* border-bottom: 1px solid brown; */
     font-size: 20px;
     font-weight: 500;
     color: blue;

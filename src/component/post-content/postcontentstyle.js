@@ -9,7 +9,7 @@ cursor: pointer;
 .postcontent{
     width: 400px;
     margin: 10px;
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
     border-color: brown;
     border-radius: 10px;
 

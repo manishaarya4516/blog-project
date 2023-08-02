@@ -19,7 +19,7 @@ export const Login = () => {
     e.preventDefault();
 
     axios
-      .post("http://localhost:5002/auth/login", formData,{
+      .post("https://blogarticle2-manishaarya4516.b4a.run/auth/login", formData,{
         headers: { "Content-Type": "application/json" },
       })
       .then((res) => {

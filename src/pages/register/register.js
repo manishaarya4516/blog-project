@@ -18,7 +18,7 @@ export const Register = () => {
     formData.append("email", email);
     formData.append("password", password);
     e.preventDefault();
-    axios.post("http://localhost:5002/auth/register", formData, {
+    axios.post("https://blogarticle2-manishaarya4516.b4a.run/auth/register", formData, {
       headers: { "Content-Type": "application/json" },
     });
     try {
