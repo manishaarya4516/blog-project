@@ -35,7 +35,7 @@ export const SinglePost = () => {
           Within the various uses of the word today, "nature" often refers to
           geology and wildlife. Nature can refer to the general realm of living
           plants and animals, and in some cases to the processes associated with
-          inanimate objects
+          inanimate 
           Within the various uses of the word today, "nature" often refers to
           geology and wildlife. Nature can refer to the general realm of living
           plants and animals, and in some cases to the processes associated with
